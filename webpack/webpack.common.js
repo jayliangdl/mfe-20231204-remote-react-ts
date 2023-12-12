@@ -12,6 +12,10 @@ module.exports = (env) => {
   
     resolve: {
       extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
+      alias: {
+        // 设置 '@' 为 src 目录的别名
+        '@': path.resolve(__dirname, '..' , 'src')
+      },
     },
   
     devServer: {
